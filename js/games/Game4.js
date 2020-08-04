@@ -1,5 +1,5 @@
 const G4_NUMBER_MULTIPLIER = 1000;
-const G4_LEVEL_LENGTH = 10000;
+const G4_LEVEL_LENGTH = 9000;
 const FIRST_THREE_DIG_NUM = 100;
 
 class Game4 extends Phaser.Scene {
@@ -99,7 +99,7 @@ class Game4 extends Phaser.Scene {
 
         // The timer and the line that indicates how much time is left 
         let timerInterval = setInterval(function () {
-            this.newBarEnd = this.newBarEnd - (TIME_BAR_LENGTH / (G3_LEVEL_LENGTH / TIMER_UPDATE_TIME));
+            this.newBarEnd = this.newBarEnd - (TIME_BAR_LENGTH / (G4_LEVEL_LENGTH / TIMER_UPDATE_TIME));
             this.timerLine.setTo(TIME_BAR_START, 190, this.newBarEnd, 190);
 
             if (this.newBarEnd < TIMER_RED_COLOR_ZONE) {
