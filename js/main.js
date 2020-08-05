@@ -34,4 +34,4 @@ game.scene.add('Game7', Game7);
 game.scene.add('Game8', Game8);
 game.scene.add('Game9', Game9);
 game.scene.add('Game10', Game10);
-game.scene.start('Game5'); // changed from FirstScene 
+game.scene.start('Game6'); // changed from FirstScene 
